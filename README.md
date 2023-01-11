@@ -7,7 +7,8 @@ The end result will be not needing the jvm, as all the code will already adhere 
 # What is the purpose of this repository?
 
 To put the java app inside of python, javascript, & c/c++. 
-But, mostly to keep away from having to use compiled code or boilerplate code.
-But, this also exists for the purpose of using java like code on the web directly in the browser, either as javascript code, or as python code to use 
-  with the brython.js module.
-The point being this, the code is meant to run even in the web. Even if it is mostly python code.
+
+Mostly as a place to keep the code that is supposed to imitate java functionality without actually being java code. It is also meant to demonstrate the difficulty of
+ shifting from one programming language to another. Even though the code is functional, do realize that if you aren't careful, you could handle the error it give you
+  incorrectly thinking you've solved the problem by handling the exception. In ordinary applications one wouldn't do such, but in the case of the type of flask server I
+ running,
