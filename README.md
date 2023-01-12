@@ -4,9 +4,13 @@ In this repository, their is code transpiled from java code. I've found a way to
 
 The end result will be not needing the jvm, as all the code will already adhere to the equivalent functionality.
 
+
+
 # What is the purpose of this repository?
 
-To put the java app inside of python, javascript, & c/c++. 
+To put the java app inside of python & c/c++. Brython is good enough to run python3 like code with no problem of later intermixing it with javascript defined libraries
+
+
 
 Mostly as a place to keep the code that is supposed to imitate java functionality without actually being java code. It is also meant to demonstrate the difficulty of
  shifting from one programming language to another. Even though the code is functional, do realize that if you aren't careful, you could handle the error it give you
