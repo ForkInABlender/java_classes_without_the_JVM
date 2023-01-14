@@ -4,7 +4,12 @@ app = Flask(__name__)
 
 @app.errorhandler(500)
 def page_not_found(e):
-    return "", 500
+	print(request.base_url.split('.repl.co'))
+	return "", 404
+
+@app.errorhandler(404)
+def file_not_found(e):
+    abort(500)
 
 @app.route('/brython/3.11.0/brython_stdlib.min.js')
 def brython_stdlib_min():
