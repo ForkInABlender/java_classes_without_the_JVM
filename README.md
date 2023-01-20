@@ -13,3 +13,17 @@ The reason to do this is so that it just runs in the web. No real need for too m
 # Is their a way to optimize my code?
 
 Yes, their is. I'd use the https://brython.info editor and copy the javascript it emits from your code into a ".js" file. If you want it really optimized, hand tuning is gonna be your best bet before compiling & using web assembly blobs.
+
+# Do ajax and other javascript libraries work?
+
+From what I could tell, yes. It seemed to work well and little to no issue using it in python. The only difference is the syntatic reference replacement for "$" in javascript. You don't have to change anything within the ajax libraries.
+
+# Can this be used with nodejs?
+
+Yes but why would you waste your time with nodejs for something that javascript and a python interface can do?
+
+And the CPython implementation of the ctypes module for loading c/c++ binaries will need to be translated to python to be used with brython.
+
+# Does the translated java & c/c++ code only run inside of flask & brython?
+
+Currently it runs everywhere including the web.
