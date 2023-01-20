@@ -26,4 +26,6 @@ And the CPython implementation of the ctypes module for loading c/c++ binaries w
 
 # Does the translated java & c/c++ code only run inside of flask & brython?
 
-Currently it runs everywhere including the web.
+Currently it runs everywhere including the web except for what hasn't been translated of the ctypes module for cpython3. When that is done it will likely be able to load and run compiled linux libraries. This will also mean reverse engineering the linux interpreter and binary loader/parser. 
+
+"And the simplest way to win is to simply not play. Hello, Phelix, would you like to play a game?" -- war games
