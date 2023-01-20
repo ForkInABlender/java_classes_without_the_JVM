@@ -12,4 +12,4 @@ The reason to do this is so that it just runs in the web. No real need for too m
 
 # Is their a way to optimize my code?
 
-Yes, their is. I'd use the https://brython.info editor and copy the javascript it emits from your code into a ".js" file. 
+Yes, their is. I'd use the https://brython.info editor and copy the javascript it emits from your code into a ".js" file. If you want it really optimized, hand tuning is gonna be your best bet before compiling & using web assembly blobs.
