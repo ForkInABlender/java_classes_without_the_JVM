@@ -3,11 +3,9 @@ from werkzeug.exceptions import HTTPException
 from werkzeug.middleware.proxy_fix import ProxyFix
 app=Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app, x_host=1)
-
 @app.before_request
 def before_process():
 	request.remote_addr
-
 class handle_class_302(HTTPException):
 	code=302
 file_not_found=lambda e:(handle_class_302(),302)
