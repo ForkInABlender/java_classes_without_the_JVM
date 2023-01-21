@@ -40,3 +40,14 @@ run "git clone https://github.com/ForkInABlender/java_to_python_anywhere.git && 
 Currently, no. It will just keep running. As all I've told the code to do is send a empty redirect request to a class which doesn't respond, so the server returns
  a signal 200 with a null byte character. This means that the runtime knows to skip areas where the files aren't files but instead directories. The server should
   have no problem running and as far as I know shouldn't crash. It will render everything when changes happen dynamically outside of debug mode.
+
+# how do you get sys.argv if the code is using brython.js?
+
+It resolves to the url itself. inside of an array, indicasting it is the only argument it itself sees. Do note that there will be some encoding and decoding issues.
+ This is due to the nature of how the web was designed. Otherwise, outside of the browser, it looks at standard line of input flags into the file.
+
+https://flask-socketio.readthedocs.io/en/latest/getting_started.html#debugging-and-troubleshooting
+https://observablehq.com/@robertleeplummerjr/gpu-js-example-slow-fade
+https://web.archive.org/web/20051220221417/http://www.ramsch.org/martin/uni/fmi-hp/iso8859-1.html
+https://web.archive.org/web/20061116122536/https://www.utoronto.ca/webdocs/HTMLdocs/NewHTML/en_test.html
+http://www.obkb.com/dcljr/charstxt.html 
