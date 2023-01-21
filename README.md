@@ -29,3 +29,14 @@ And the CPython implementation of the ctypes module for loading c/c++ binaries w
 Currently it runs everywhere including the web except for what hasn't been translated of the ctypes module for cpython3. When that is done it will likely be able to load and run compiled linux libraries. This will also mean reverse engineering the linux interpreter and binary loader/parser. 
 
 "And the simplest way to win is to simply not play. Hello, Phelix, would you like to play a game?" -- war games
+
+# How do I get started?
+
+run "git clone https://github.com/ForkInABlender/java_to_python_anywhere.git && cd java_to_python_anywhere && python3 -m pip install flask && python3 main.py". Then
+ put the python code under the "brython/3.11.0/Lib/site-packages/" that you wish to use with a modified copy of index.html file.
+
+# Would not having the files cause a crash? Would a signal 3xx,4xx, & 5xx signal cause the server to crash? Does updating index.html cause flask to crash?
+
+Currently, no. It will just keep running. As all I've told the code to do is send a empty redirect request to a class which doesn't respond, so the server returns
+ a signal 200 with a null byte character. This means that the runtime knows to skip areas where the files aren't files but instead directories. The server should
+  have no problem running and as far as I know shouldn't crash. It will render everything when changes happen dynamically outside of debug mode.
