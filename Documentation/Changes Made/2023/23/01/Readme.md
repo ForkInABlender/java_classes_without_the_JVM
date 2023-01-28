@@ -15,4 +15,7 @@
    thinks the libraries should be. 
 * "brython/3.11.0/Lib/site-packages/" and its current layout should be the area where modules you want to run in the web go. Even translated java code should go in
     this directory. Once it loads, runs, and executes, you can see what files import what or at least where it thinks the files should be imported from. It is a great
-     way to do dependency checking.
+     way to do dependency checking. If you're missing a module, installation is as simple as cloning a repo and pointing to it with git_importer.py module.
+* The more code that is transpiled/translated from java to c/c++ & python code, the more one can test the code by just reloading the webpage. I tested my theories on
+   whether or not it would work. Thus far, the __init__.py are their to make the directories and other modules with those directories visible to brython & the web. It
+    imitates how jvm has to look at java packages. The only difference is the syntax used. Once you know the 
